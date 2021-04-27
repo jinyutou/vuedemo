@@ -7,6 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Layui from 'layui'
 import 'layui/src/css/layui.css'
+import './assets/css/ex_layui.css'
 
 Vue.use(ElementUI);
 Vue.use(Layui);

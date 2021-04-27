@@ -99,7 +99,8 @@
 <style>
 body {
   overflow-y: scroll;
-  padding: 5px;
+  width: 98%;
+  margin: 0 auto;
 }
 .el-row {
   margin: 15px 0;
