@@ -59,12 +59,12 @@ const mockData = {
                     index:'2-1',
                     name:'Radio 单选框',
                     icon:'el-icon-edit',
-                    path:'/icon'
+                    path:'/radio'
                 },{
                     index:'2-2',
                     name:'CheckBox 多选框',
                     icon:'el-icon-edit',
-                    path:'/icon'
+                    path:'/checkbox'
                 }]
             }
         ]

@@ -41,6 +41,11 @@ const routes = [
     component: () => import('../views/basic/Link.vue')
   },
   {
+    path: '/radio',
+    name: 'Radio',
+    component: () => import('../views/form/Radio.vue')
+  },
+  {
     path: '/user/UserList',
     name: 'User',
     component: () => import('../views/user/UserList.vue')
