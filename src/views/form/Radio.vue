@@ -1,20 +1,20 @@
 <template>
     <div id="radio">
-        <blockquote class="layui-elem-quote">
+        <blockquote class="layui-elem-quote ex-layui-elem-quote">
             基础用法   由于选项默认可见，不宜过多，若选项过多，建议使用 Select 选择器。
         </blockquote>
         <el-radio v-model="radio" label="1">备选项</el-radio>
         <el-radio v-model="radio" label="2">备选项</el-radio>
 
         
-        <blockquote class="layui-elem-quote">
+        <blockquote class="layui-elem-quote ex-layui-elem-quote">
             禁用状态   单选框不可用的状态。
         </blockquote>
         <el-radio disabled v-model="radiodis" label="禁用">备选项</el-radio>
         <el-radio disabled v-model="radiodis" label="选中且禁用">备选项</el-radio>
 
         
-        <blockquote class="layui-elem-quote">
+        <blockquote class="layui-elem-quote ex-layui-elem-quote">
             单选框组  适用于在多个互斥的选项中选择的场景
         </blockquote>
         <el-radio-group v-model="radiogroup">
@@ -24,7 +24,7 @@
         </el-radio-group>
 
         
-        <blockquote class="layui-elem-quote">
+        <blockquote class="layui-elem-quote ex-layui-elem-quote">
             按钮样式  按钮样式的单选组合。
         </blockquote>
         <div>

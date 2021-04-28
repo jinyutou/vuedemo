@@ -102,6 +102,9 @@ body {
   width: 98%;
   margin: 0 auto;
 }
+.layui-elem-quote{
+    margin-top: 10px;
+}
 .el-row {
   margin: 15px 0;
 }
