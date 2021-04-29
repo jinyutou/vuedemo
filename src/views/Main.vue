@@ -1,7 +1,16 @@
 <template>
   <div id="main">
-    <el-container style="border: 1px solid #eee; height: 100%">
-      <el-header style="text-align: left; font-size: 20px"> vuedemo </el-header>
+    <el-container style="border: 1px solid #eee; height: 100%" >
+      <el-header style="text-align: left; font-size: 20px"> vuedemo 
+        <div class="antrun">
+          <lottie 
+            :options="defaultOptions"
+            :height="60"
+            :width="60"
+            v-on:animCreated="handleAnimation"
+          />
+        </div>
+      </el-header>
 
       <el-container style="padding-top: 60px">
         <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
@@ -49,12 +58,14 @@
   </div>
 </template>
 <script>
+import * as animationData from "../assets/lottie/antrun.json";
 export default {
     created() {
         this.initTree();
     },
     data() {
         return {
+            defaultOptions: { animationData: animationData.default },
             openeds:['1'],
             treeList:[],
             editableTabsValue: "-1",
@@ -70,6 +81,9 @@ export default {
         };
     },
     methods: {
+        handleAnimation: function (anim) {
+          this.anim = anim;
+        },
         initTree(){
             this.request.http_mock({
                 url:"/api/treeList",
@@ -136,6 +150,11 @@ export default {
   height: 100%;
   padding: 0;
   margin: 0;
+}
+.antrun{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .el-container {
   height: 100%;

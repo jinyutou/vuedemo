@@ -31,7 +31,7 @@
     </div>
 </template>
 <style>
-.el-link{
+#link{
     padding: 5px;
 }
 </style>
